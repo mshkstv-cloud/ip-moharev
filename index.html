@@ -787,10 +787,23 @@
         <div class="container">
             <div class="form-box reveal">
                 <h2>Получите расчёт стоимости вашего объекта</h2>
-                <form action="send.php" method="POST"><input type="text" placeholder="Ваше имя" required><input type="tel"
-                        placeholder="Ваш телефон" required><textarea
-                        placeholder="Комментарий: площадь, вид работ, адрес или удобное время для звонка"></textarea><button
-                        class="btn btn-orange" type="submit" style="width:100%">Получить расчёт</button></form>
+                <form action="https://formsubmit.co/moharev.aleksei@mail.ru" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Новая заявка с сайта ИП Мохарев">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="name" placeholder="Ваше имя" required>
+
+    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+
+    <textarea name="message" placeholder="Комментарий: площадь, вид работ, адрес или удобное время для звонка"></textarea>
+
+    <button class="btn btn-orange" type="submit" style="width:100%">
+        Получить расчёт
+    </button>
+
+</form>
                 <div class="success" id="successMessage">Спасибо за заявку! Мы свяжемся с вами в ближайшее время.</div>
             </div>
         </div>
